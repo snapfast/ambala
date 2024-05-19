@@ -11,9 +11,9 @@ import { NgOptimizedImage } from '@angular/common'
 })
 export class PaygateComponent {
 
-  // redirect to external webstie after clicking a button in new tab
+  // redirect to calendly
   redirectToExternalWebsite() {
-    window.open('https://www.google.com', '_blank');
+    window.open('https://calendly.com/rahulbali2/30min', '_blank');
   }
 
   constructor() { }
