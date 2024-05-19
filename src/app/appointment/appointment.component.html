@@ -1,1 +1,21 @@
-<p>appointment works!</p>
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+      <h2>{{ title }}</h2>
+      <p>Rahul Bali offers 1 on 1 sessions for anyone looking for consultations.</p>
+      <ul>
+        <li>Consultations</li>
+        <li>Life Coaching</li>
+        <li>Astrological Readings</li>
+      </ul>
+      <!-- Add the router-outlet directive to the app.component.html file to display the content. -->
+      <!-- <div class="divider" role="separator" aria-label="Divider"></div> -->
+
+      <div class="appointment-button">
+        <button mat-flat-button color="primary" (click)="navigateToAppointment()">Book an Appointment</button>
+      </div>
+    </div>
+    <div class="right-side">
+    </div>
+  </div>
+</main>

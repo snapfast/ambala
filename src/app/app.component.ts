@@ -20,12 +20,4 @@ import { MatButtonModule } from '@angular/material/button';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Consultations';
-
-  constructor(private router: Router) { }
-
-  // This function to navigate to another component
-  navigateToAppointment() {
-    this.router.navigate(['/appointment']);
-  }
 }
