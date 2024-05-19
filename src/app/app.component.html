@@ -10,7 +10,13 @@
         <li>Astrological Readings</li>
       </ul>
 
-      <button class="appointment-button" (click)="navigateToAppointment()">Book an Appointment</button>
+      <button mat-button (click)="navigateToAppointment()">Book an Appointment</button>
+
+      <button mat-button>Basic</button>
+      <button mat-flat-button color="primary">Primary</button>
+      <button mat-flat-button color="secondary">Primary</button>
+
+
 
       <!-- Add the router-outlet directive to the app.component.html file to display the content. -->
       <router-outlet />
