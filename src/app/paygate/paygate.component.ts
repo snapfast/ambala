@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { NgOptimizedImage } from '@angular/common'
 
 @Component({
   selector: 'app-paygate',
   standalone: true,
-  imports: [MatButtonModule],
+  imports: [MatButtonModule, NgOptimizedImage],
   templateUrl: './paygate.component.html',
   styleUrl: './paygate.component.css'
 })
