@@ -1,9 +1,0 @@
-
-/* center on page */
-.appointment-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
