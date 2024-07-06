@@ -6,6 +6,9 @@ import { Router, RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { DeviceDetectorService } from 'ngx-device-detector';
 
+import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
+
+
 
 @Component({
   selector: 'app-root',
@@ -14,13 +17,13 @@ import { DeviceDetectorService } from 'ngx-device-detector';
     RouterOutlet, 
     NgOptimizedImage,
     RouterModule, 
-    MatButtonModule
+    MatButtonModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'जोर से बोलो जय माता दी, सारे बोले जय माता दी। बोल सांचे दरबार की जय';
+  title = 'जय माता दी अम्बा माता';
 
   constructor(private deviceService: DeviceDetectorService, private router: Router) {
     this.epicFunction();
@@ -44,4 +47,5 @@ export class AppComponent {
       this.router.navigate(['/main']);
     }
   }
+  
 }

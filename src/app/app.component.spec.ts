@@ -14,10 +14,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'urban-palm-tree' title`, () => {
+  it(`should have the 'जय माता दी अम्बा माता' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('urban-palm-tree');
+    expect(app.title).toEqual('जय माता दी अम्बा माता');
   });
 
   it('should render title', () => {

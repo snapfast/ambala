@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 // import material web button 3
 import { MatButtonModule } from '@angular/material/button';
 import {YouTubePlayer} from '@angular/youtube-player';
+import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 
 
 @Component({
@@ -17,12 +18,14 @@ import {YouTubePlayer} from '@angular/youtube-player';
     RouterModule,
     MatButtonModule,
     YouTubePlayer,
+    NgxGoogleAnalyticsModule.forRoot('UA-123456789-1'),
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
 export class MainComponent {
-  title = 'MAIN';
+  title = 'जय माता दी अम्बा माता';
+  subtitle = 'जोर से बोलो जय माता दी, सारे बोले जय माता दी। बोल सांचे दरबार की जय';
 
   constructor(private router: Router) { }
 
@@ -30,6 +33,5 @@ export class MainComponent {
   navigateToAppointment() {
     this.router.navigate(['/paygate']);
   }
-
 }
 
