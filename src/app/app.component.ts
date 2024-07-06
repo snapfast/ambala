@@ -20,7 +20,7 @@ import { DeviceDetectorService } from 'ngx-device-detector';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Rahul Bali Consulting';
+  title = 'जोर से बोलो जय माता दी, सारे बोले जय माता दी। बोल सांचे दरबार की जय';
 
   constructor(private deviceService: DeviceDetectorService, private router: Router) {
     this.epicFunction();

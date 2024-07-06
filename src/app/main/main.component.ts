@@ -5,6 +5,8 @@ import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
 // import material web button 3
 import { MatButtonModule } from '@angular/material/button';
+import {YouTubePlayer} from '@angular/youtube-player';
+
 
 @Component({
   selector: 'app-main',
@@ -13,7 +15,8 @@ import { MatButtonModule } from '@angular/material/button';
     RouterOutlet,
     NgOptimizedImage,
     RouterModule,
-    MatButtonModule
+    MatButtonModule,
+    YouTubePlayer,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
