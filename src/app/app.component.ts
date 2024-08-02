@@ -41,7 +41,8 @@ export class AppComponent {
     // route to component based on isMobile, isTablet, isDesktopDevice
     if (isMobile && !isTablet && !isDesktopDevice) {
       // route to mobile component
-      this.router.navigate(['/mobile']);
+      this.router.navigate(['/main']);
+      // this.router.navigate(['/mobile']);
     } else {
       // route to main component
       this.router.navigate(['/main']);
