@@ -5,7 +5,7 @@ import { PaygateComponent } from './paygate/paygate.component';
 
 export const routes: Routes = [
     { path: '', component: MainComponent },
-    { path: 'mobile', component: MobileComponent },
-    { path: 'main', component: MainComponent },
+    // { path: 'mobile', component: MobileComponent },
+    // { path: 'main', component: MainComponent },
     { path: 'paygate', component: PaygateComponent },
 ];

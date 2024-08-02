@@ -6,10 +6,6 @@ import { Router, RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { DeviceDetectorService } from 'ngx-device-detector';
 
-import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
-
-
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -30,7 +26,7 @@ export class AppComponent {
   }
 
   epicFunction() {
-    console.log('hello `app` component');
+    console.log('jai mata di `app` component');
     const isMobile = this.deviceService.isMobile();
     const isTablet = this.deviceService.isTablet();
     const isDesktopDevice = this.deviceService.isDesktop();
@@ -39,14 +35,12 @@ export class AppComponent {
     console.log(isDesktopDevice); // returns if the app is running on a Desktop browser.
 
     // route to component based on isMobile, isTablet, isDesktopDevice
-    if (isMobile && !isTablet && !isDesktopDevice) {
-      // route to mobile component
-      this.router.navigate(['/main']);
-      // this.router.navigate(['/mobile']);
-    } else {
-      // route to main component
-      this.router.navigate(['/main']);
-    }
+    // if (isMobile && !isTablet && !isDesktopDevice) {
+    //   // route to mobile component
+    //   this.router.navigate(['/mobile']);
+    // } else {
+    //   // route to main component
+    //   this.router.navigate(['/main']);
+    // }
   }
-  
 }
