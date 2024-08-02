@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 // import material web button 3
 import { MatButtonModule } from '@angular/material/button';
 import {YouTubePlayer} from '@angular/youtube-player';
-import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
+// import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 
 
 @Component({
@@ -18,7 +18,7 @@ import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
     RouterModule,
     MatButtonModule,
     YouTubePlayer,
-    NgxGoogleAnalyticsModule.forRoot('UA-123456789-1'),
+    // NgxGoogleAnalyticsModule.forRoot('UA-123456789-1'),
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
