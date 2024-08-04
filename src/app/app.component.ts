@@ -35,12 +35,8 @@ export class AppComponent {
     console.log(isDesktopDevice); // returns if the app is running on a Desktop browser.
 
     // route to component based on isMobile, isTablet, isDesktopDevice
-    // if (isMobile && !isTablet && !isDesktopDevice) {
-    //   // route to mobile component
-    //   this.router.navigate(['/mobile']);
-    // } else {
-    //   // route to main component
-    //   this.router.navigate(['/main']);
-    // }
+    if (isMobile && !isTablet && !isDesktopDevice) {
+      this.router.navigate(['/mobile']);
+    }
   }
 }
